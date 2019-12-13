@@ -18,7 +18,7 @@ env = gym.make("Taxi-v3").env
 
 # initiate q-table
 print("rows:", env.observation_space.n)
-print("rows:", env.action_space.n)
+print("columns:", env.action_space.n)
 q_table = np.zeros([env.observation_space.n, env.action_space.n])
 
 # initiate hyperparameters
