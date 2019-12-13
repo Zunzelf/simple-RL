@@ -1,11 +1,12 @@
 import numpy as np 
 import gym, random
+from os import system
 from IPython.display import clear_output as clear
 from time import sleep
 
 def print_frames(frames):
     for i, frame in enumerate(frames):
-        clear(wait=True)
+        system('cls')
         print(frame['frame'])
         print(f"Timestep: {i + 1}")
         print(f"State: {frame['state']}")
